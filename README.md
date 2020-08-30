@@ -15,7 +15,7 @@ Run these command:
 In **Bash**:
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/birobirobiro/omni-spicetify-theme.git omni
+git clone https://github.com/getomni/omni-spicetify-theme.git omni
 cd omni
 cp omni.js ../../Extensions
 spicetify config extensions omni.js
@@ -28,7 +28,7 @@ spicetify apply
 In **Powershell**:
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/birobirobiro/omni-spicetify-theme.git omni
+git clone https://github.com/getomni/omni-spicetify-theme.git omni
 cd omni
 Copy-Item omni.js ..\..\Extensions
 spicetify config extensions omni.js
