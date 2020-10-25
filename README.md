@@ -2,12 +2,12 @@
   <br>
   <img src="https://storage.googleapis.com/golden-wind/github/omni/omni.png" alt="Omni Logo" width="100">
   <br>
-  Omni for <a href="https://github.com/khanhas/Spicetify">Spicetify</a>
+  Omni for <a href="https://github.com/khanhas/spicetify-cli">Spicetify</a>
   <br>
 </h1>
 
 <p align="center">
-  <strong>Dark theme for <a href="https://github.com/khanhas/Spicetify">Spicetify</a></strong>
+  <strong>Dark theme for <a href="https://github.com/khanhas/spicetify-cli">Spicetify</a></strong>
 </p>
 
 <p align="center">
