@@ -1,7 +1,5 @@
 ### [Spicetify](https://github.com/khanhas/spicetify-cli)
 
-Special thanks for the Dracula GTK theme for making this possible.
-
 #### Linux and MacOS:
 
 In **Bash**:
