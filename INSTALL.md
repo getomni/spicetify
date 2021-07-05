@@ -1,4 +1,4 @@
-### [Spicetify](https://github.com/khanhas/spicetify-cli)
+### [Spicetify v2](https://github.com/khanhas/spicetify-cli)
 
 #### Linux and MacOS:
 
@@ -8,7 +8,7 @@ In **Bash**:
 cd "$(dirname "$(spicetify -c)")/Themes"
 git clone https://github.com/getomni/spicetify.git omni
 cd omni
-cp omni.js ~/spicetify-cli/Extensions
+cp omni.js ../../Extensions/.
 spicetify config extensions omni.js
 spicetify config current_theme omni color_scheme base
 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
@@ -30,6 +30,13 @@ spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify apply
 ```
 
+From Spotify > v1.1.62, in sidebar, they use an adaptive render mechanic to actively show and hide items on scroll. It helps reducing number of items to render, hence there is significant performance boost if you have a large playlists collection. But the drawbacks is that item height is hard-coded, it messes up user interaction when we explicity change, in CSS, playlist item height bigger than original value. So you need to add these 2 lines in Patch section in config file:
+```ini
+[Patch]
+xpui.js_find_8008 = ,(\w+=)32,
+xpui.js_repl_8008 = ,${1}56,
+```
+
 #### Hide Window Controls
 
 Windows user, please edit your Spotify shortcut and add flag `--transparent-window-controls` after the Spotify.exe:
@@ -49,28 +56,3 @@ Remove the omni script with the following commands
 spicetify config extensions omni.js-
 spicetify apply
 ```
-
-#### `color.ini` reference
-
-These keys are used in the `colors.ini` file.
-
-| Key                                     | Target                                                                    |
-| --------------------------------------- | ------------------------------------------------------------------------- |
-| `main_fg`                               | The main Accent, used for sidebar and some interface elements             |
-| `main_bg`                               | The real star of the show, the main Background of app (on the right side) |
-| `secondary_fg`                          | Main text and some other small stuff                                      |
-| `secondary_bg`                          | The background for the left side navbar                                   |
-| `selected_button`                       | Button currently being hovered                                            |
-| `pressing_fg`                           | The color that momentarily appears when you press anything                |
-| `pressing_button_fg`                    | The textcolor for a pressed button                                        |
-| `pressing_button_bg`                    | BG color for the pressed button                                           |
-| `sidebar_and_player_bg`                 | Background for the player                                                 |
-| `sidebar_indicator_and_hover_button_bg` | For the slider & selected items when you hover over it                    |
-| `cover_overlay_and_shadow`              | Overlay for when you hover over the album covers                          |
-| `slider_bg`                             | The background for the slider                                             |
-| `scrollbar_fg_and_selected_row_bg`      | Color for the current selected row                                        |
-| `active_control_fg`                     | Foreground for active control items                                       |
-| `indicator_fg_and_button_bg`            | Button text color                                                         |
-| `miscellaneous_bg`                      | The background color of toolips ("You're offline" etc)                    |
-| `miscellaneous_hover_bg`                | Hover Color for the Tooltips                                              |
-| `preserve_1`                            | Misc text colors                                                          |
