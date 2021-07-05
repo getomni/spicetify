@@ -29,7 +29,7 @@
 
 ## Info
 
-With the new versions of Spotify and Spicetify the main branch theme doesn't work anymore as it is outdated. Now with this new version, you can enjoy all the new Spotify functionalities using the Omni theme.
+With the new versions of Spotify and Spicetify the main branch theme became outdated and doesn't work anymore. Using this version (v2), you can enjoy all Spotify functionalities from new releases using the Omni theme.
 
 ## Install
 
@@ -39,15 +39,14 @@ All instructions can be found at [INSTALL.md](./INSTALL.md).
 
 This theme version (v2) is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/getomni/spicetify/graphs/contributors).
 
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/ianlibanio"><img style="border-radius: 50%;" src="https://github.com/ianlibanio.png?size=100" width="100px;" alt=""/><br /><sub><b>Ian Libânio</b></sub></a></td>
-</table>
+| [![Ian Libânio](https://github.com/ianlibanio.png?size=100)](https://github.com/ianlibanio) |
+| ------------------------------------------------------------------------------------------- |
+| [Ian Libânio](https://github.com/ianlibanio)                                                |
 
 ## License
 
-[GPL-3.0 License](./LICENSE.md)
+[MIT License](./LICENSE.md)
 
 ---
 
-Based on [Dribbblish v2](https://github.com/morpheusthewhite/spicetify-themes/tree/v2/Dribbblish) 
+Based on [Dribbblish v2](https://github.com/morpheusthewhite/spicetify-themes/tree/v2/Dribbblish)
