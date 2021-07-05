@@ -6,7 +6,7 @@ In **Bash**:
 
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/getomni/spicetify.git omni
+git clone -b v2 https://github.com/getomni/spicetify.git omni
 cd omni
 cp omni.js ../../Extensions/.
 spicetify config extensions omni.js
@@ -21,7 +21,7 @@ In **Powershell**:
 
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/getomni/spicetify.git omni
+git clone -b v2 https://github.com/getomni/spicetify.git omni
 cd omni
 Copy-Item omni.js ..\..\Extensions
 spicetify config extensions omni.js
@@ -31,6 +31,7 @@ spicetify apply
 ```
 
 From Spotify > v1.1.62, in sidebar, they use an adaptive render mechanic to actively show and hide items on scroll. It helps reducing number of items to render, hence there is significant performance boost if you have a large playlists collection. But the drawbacks is that item height is hard-coded, it messes up user interaction when we explicity change, in CSS, playlist item height bigger than original value. So you need to add these 2 lines in Patch section in config file:
+
 ```ini
 [Patch]
 xpui.js_find_8008 = ,(\w+=)32,
