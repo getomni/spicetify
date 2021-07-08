@@ -58,7 +58,7 @@ body {
 
 .lyrics-lyricsContainer-LyricsContainer {
   --lyrics-color-background: var(--spice-main) !important;
-  --lyrics-color-inactive: var(--spice-main) !important;
+  --lyrics-color-inactive: rgba(var(--spice-main), 0.9) !important;
 }
 
 .lyrics-lyricsContainer-LyricsLine {
