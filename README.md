@@ -13,7 +13,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/github/license/getomni/spicetify?color=5FCC6F">
+  <img alt="License" src="https://img.shields.io/github/license/ianlibanio/omni-spicetify?color=5FCC6F">
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@ All instructions can be found at [INSTALL.md](./INSTALL.md).
 
 ## Team
 
-This theme version (v2) is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/getomni/spicetify/graphs/contributors).
+This theme version (v2) is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/ianlibanio/omni-spicetify/graphs/contributors).
 
 | [![Ian Libânio](https://github.com/ianlibanio.png?size=100)](https://github.com/ianlibanio) |
 | ------------------------------------------------------------------------------------------- |
