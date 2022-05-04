@@ -8,7 +8,7 @@ In **Bash**:
 cd "$(dirname "$(spicetify -c)")/Themes"
 git clone https://github.com/getomni/spicetify.git omni
 cd omni
-cp omni.js ~/spicetify-cli/Extensions
+cp omni.js ../../Extensions
 spicetify config extensions omni.js
 spicetify config current_theme omni color_scheme base
 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
