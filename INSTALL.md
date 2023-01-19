@@ -6,7 +6,7 @@ In **Bash**:
 
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/ianlibanio/omni-spicetify.git omni
+git clone https://github.com/getomni/spicetify.git omni
 cd omni
 cp omni.js ~/.config/spicetify/Extensions
 spicetify config extensions omni.js
@@ -21,7 +21,7 @@ In **Powershell**:
 
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/ianlibanio/omni-spicetify.git omni
+git clone https://github.com/getomni/spicetify.git omni
 cd omni
 Copy-Item omni.js %appdata%\spicetify\Extensions\
 spicetify config extensions omni.js
